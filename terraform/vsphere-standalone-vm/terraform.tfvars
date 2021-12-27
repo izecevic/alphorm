@@ -2,7 +2,7 @@
 
 # Providers
 vsphere_user = "administrator@vsphere.local"
-vsphere_password = "Alphorm2021!"
+vsphere_password = "MY_PASSWORD"
 vsphere_server = "192.168.1.91"
 
 # Infrastructure
