@@ -7,3 +7,8 @@ provider "vsphere" {
   # If you have a self-signed cert
   allow_unverified_ssl = true
 }
+
+resource "vsphere_folder" "folder" {
+  path          = "Alphorm"
+  type          = "datacenter"
+}
