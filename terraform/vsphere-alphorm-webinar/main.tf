@@ -8,17 +8,14 @@ provider "vsphere" {
   allow_unverified_ssl = true
 }
 
-variable "vsphere_folder_path" {
-  type = string
-  default = "Alphorm"
-}
-
-variable "vsphere_folder_type" {
-  type = string
-  default = "datacenter"
+variable "vsphere_folder_var" {
+  default = {
+    path = "Alphorm"
+    type = "datacenter"
+  }
 }
 
 resource "vsphere_folder" "folder" {
-  path          = var.vsphere_folder_path
-  type          = var.vsphere_folder_type
+  path          = var.vsphere_folder_var.path
+  type          = var.vsphere_folder_var.type
 }
