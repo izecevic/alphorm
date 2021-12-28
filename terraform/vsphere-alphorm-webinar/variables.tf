@@ -6,4 +6,5 @@ variable "vsphere_password" {}
 variable "vsphere_server" {}
 
 #variables infra
+variable "vsphere_datacenter" {}
 variable "vsphere_folder_var" {}
